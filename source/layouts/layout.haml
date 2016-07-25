@@ -58,11 +58,11 @@
           %input.search{name: "q", placeholder: "Поиск", results: "0", type: "text"}/
       %ul{role: "main-navigation"}
         %li
-          %a{href: "/"} Блог
+          %a{href: "/"} Главная
         %li
           %a{href: "/archives"} Архив
         %li
-          %a{href: "/categories"} Индекс
+          %a{href: "/categories"} Рубрикатор
         %li
           %a{href: "/about"} Обо мне
     #main
@@ -70,6 +70,7 @@
         = yield
         %aside.sidebar
           %section
+            = partial 'about_me'
             = partial 'recent_posts'
     %footer{role: "contentinfo"}
       %p

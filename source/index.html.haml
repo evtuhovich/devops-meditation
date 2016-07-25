@@ -23,11 +23,11 @@ blog: blog
       %a.prev{href: next_page.url} ← Назад
     - if prev_page
       %a.next{href: prev_page.url} Вперед →
-    %a{href: "/blog/archives"} Архив
+    %a{href: "/archives"} Архив
 
 - content_for :disqus do
   :javascript
-    var disqus_shortname = 'blog-evtuhovich';
+    var disqus_shortname = 'devops-meditation';
     var disqus_script = 'count.js';
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -1,12 +1,12 @@
 ---
-title: Индекс
+title: Рубрикатор
 blog: blog
 ---
 
 %div
   %article.article
     %header
-      %h1.entry-title Индекс
+      %h1.entry-title= current_page.data['title']
     %ul#category-list
       - idx = blog('blog').tags
       - idx.sort { |a, b| 10 * (b[1].count <=> a[1].count) + (a[0].mb_chars.downcase <=> b[0].mb_chars.downcase) }.each do |tag, articles|
