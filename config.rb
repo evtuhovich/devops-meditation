@@ -126,7 +126,7 @@ configure :build do
 end
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'devops-meditaion.ru'
-  s3_sync.region                     = 'eu-west-1'
+  s3_sync.bucket                     = 'devops-meditation.ru'
+  s3_sync.region                     = 'eu-central-1'
   s3_sync.delete                     = false # We delete stray files by default.
 end
